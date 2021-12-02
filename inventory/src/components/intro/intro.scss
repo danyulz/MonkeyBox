@@ -1,0 +1,188 @@
+@import "../../global.scss";
+
+.intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 88vw;
+    height: 100vh;
+    overflow: hidden;
+
+    @media only screen and (max-width: 600px) {
+        height: 50vh;
+    }
+    .wrapper {
+        margin-top: 12vw;
+        margin-left: 7vw;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+
+        @media only screen and (max-width: 600px) {
+            margin-top: 5vh;
+        }
+
+        @media only screen and (min-width: 2000px) {
+            margin-top: 10vh;
+            margin-left: 15vw;
+        }
+        .name {
+            z-index: 1;
+            display: flex;
+            color: $white;
+            font-weight: 700;  
+            overflow: hidden;
+            font-size: 9vw;
+
+
+            @media only screen and (max-width: 600px) {
+                font-size: 12vw;
+            }
+            @media only screen and (min-width: 2000px) {
+                font-size: 110px;
+            }
+        
+        .nameWrapper {
+            margin-left: 5vw;
+            display: flex;
+            color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke: .5px;
+            -webkit-text-stroke-color: white;
+        }
+
+        .text {
+            overflow: hidden;
+            font-size: 6vh;
+
+            @media only screen and (max-width: 600px) {
+                font-size: 9vw;
+            }
+            @media only screen and (min-width: 2000px) {
+                font-size: 90px;
+            }
+        }
+
+            .carrot {
+                align-self: flex-end;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                transform-origin: bottom;
+                animation-name: bounce;
+                animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+                top: 20px;
+                margin: 0;
+            }
+
+            .niel {
+                margin-right: auto;
+            }
+        }
+
+        .monkeybox {
+            position: relative;
+            align-self: flex-end;
+            margin-top: -20vh;
+            height: 30vw;
+            width: 30vw;
+            background-color: rgb(207, 158, 93);
+            clip-path: polygon(44% 98%, 84% 80%, 84% 58%, 98% 52%, 84% 47%, 96% 37%, 57% 28%, 46% 37%, 34% 29%, 1% 42%, 13% 50%, 0 56%, 13% 61%, 13% 84%);
+        
+            @media only screen and (max-width: 600px) {
+                height: 50vw;
+                width: 50vw;
+                margin-top: -10vh;
+            }
+            @media only screen and (min-width: 2000px) {
+                margin-top: -40vh;
+            }
+        } 
+
+        .leftflap {
+            height: inherit;
+            width: auto;
+            clip-path: polygon(13% 50%, 0 56%, 33% 69%, 44% 62%);
+            background-color: rgb(228, 177, 110);
+        }
+
+        .rightflap {
+            margin-top: -30vw;
+            height: inherit;
+            width: auto;
+            clip-path: polygon(44% 62%, 44% 98%, 84% 80%, 84% 58%, 57% 69%);
+            background-color: rgb(196, 150, 91);
+            
+            @media only screen and (max-width: 600px) {
+                margin-top: -50vw;
+            }
+
+        }
+
+        .center {
+            margin-top: -30vw;
+            height: inherit;
+            width: auto;
+            clip-path: polygon(13% 50%, 46% 37%, 84% 47%, 44% 62%);
+            background-color: rgb(150, 106, 48);
+            @media only screen and (max-width: 600px) {
+                margin-top: -50vw;
+            }
+        }
+
+        .banana {
+            z-index: 0;
+            margin-top: -20vw;
+            margin-left: 9vw;
+            position: absolute;
+            
+            width: 10vw;
+
+            animation-duration: 2s;
+                animation-iteration-count: infinite;
+                transform-origin: bottom;
+                animation-name: bounce;
+                animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+            
+            @media only screen and (max-width: 600px) {
+                margin-top: -34vw;
+                margin-left: 14vw;
+                width: 18vw;
+            }
+        }
+
+        .desc {
+            z-index: 1;
+            font-family: "Cotham",sans-serif;
+            font-size: 2vw;
+            font-weight: 400px;
+            color: $mainPinkLight;
+            margin-bottom: 5vh;
+
+            @media only screen and (max-width: 600px) {
+                font-size: 4vw;
+                color: rgb(218, 238, 245);
+                margin-bottom: 1vh;
+            }
+            @media only screen and (min-width: 2000px) {
+                color: rgb(230, 255, 230);
+                font-size: 1vw;
+            }
+        }
+    }
+}
+
+.banana {
+    height: auto;
+    width: 100px;
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-3px); }
+    50%  { transform: scale(1.03,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-3px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}

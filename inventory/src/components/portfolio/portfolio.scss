@@ -1,0 +1,33 @@
+@import "../../global.scss";
+
+.portfolio {
+    display: flex;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: white;
+
+    border-width: 2px;
+    width: 60vw;
+    height: 50vh;
+
+    margin-left: 5vw;
+    margin-top: 2vh;
+
+    overflow: hidden;
+
+    .object {
+        height: 100%;
+        width: 100%;
+        border-style: solid;
+        color: whitesmoke;
+        border-width: 1px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        font-size: 10vw;
+        height: 50vh;
+    }
+
+    @media only screen and (min-width: 1350px) {
+        font-size: 5.5vw
+    }
+}
