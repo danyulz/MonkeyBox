@@ -11,12 +11,8 @@ function App() {
     <div className="app">
       <Topbar/>
           <Intro/>
-          <div className="portfolioHeader">
-            <div>Portfolio</div>
-            <div>&&nbsp;Works</div>
-          </div>
           <Portfolio/>
-          <Works/>
+          <Contact/>
     </div>
   );
 }

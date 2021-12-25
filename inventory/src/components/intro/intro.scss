@@ -89,6 +89,7 @@
             height: 30vw;
             width: 30vw;
             background-color: rgb(207, 158, 93);
+            animation: monkeyflaps 3s infinite;
             clip-path: polygon(44% 98%, 84% 80%, 84% 58%, 98% 52%, 84% 47%, 96% 37%, 57% 28%, 46% 37%, 34% 29%, 1% 42%, 13% 50%, 0 56%, 13% 61%, 13% 84%);
         
             @media only screen and (max-width: 600px) {
@@ -102,6 +103,12 @@
                 margin-top: -40vh;
                 margin-right: 5vw;
             }
+
+            @keyframes monkeyflaps {
+                0% {clip-path: polygon(44% 98%, 84% 80%, 84% 58%, 98% 52%, 84% 47%, 96% 37%, 57% 28%, 46% 37%, 34% 29%, 1% 42%, 13% 50%, 0 56%, 13% 61%, 13% 84%); }
+                50% {clip-path: polygon(44% 98%, 84% 80%, 84% 60%, 96% 55%, 84% 47%, 97% 40.775%, 58% 31.775%, 46% 37%, 32.5% 33%, 0% 44%, 13% 50%, 1% 58%, 13% 62.775%, 13% 84%); }
+                0% {clip-path: polygon(44% 98%, 84% 80%, 84% 58%, 98% 52%, 84% 47%, 96% 37%, 57% 28%, 46% 37%, 34% 29%, 1% 42%, 13% 50%, 0 56%, 13% 61%, 13% 84%); }
+            }
         } 
 
         .leftflap {
@@ -109,6 +116,13 @@
             width: auto;
             clip-path: polygon(13% 50%, 0 56%, 33% 69%, 44% 62%);
             background-color: rgb(228, 177, 110);
+            animation: monkeyflapsLeft 3s infinite;
+            @keyframes monkeyflapsLeft {
+                0% {clip-path: polygon(13% 50%, 0 56%, 33% 69%, 44% 62%); }
+                50% {clip-path: polygon(13% 50%, 1% 58%, 34% 70.775%, 44% 62%); }
+                100% {clip-path: polygon(13% 50%, 0 56%, 33% 69%, 44% 62%); }                
+            }
+
         }
 
         .rightflap {
@@ -116,6 +130,7 @@
             height: inherit;
             width: auto;
             clip-path: polygon(44% 62%, 44% 98%, 84% 80%, 84% 58%, 57% 69%);
+            animation: monkeyflapsRight 3s infinite;
             background-color: rgb(196, 150, 91);
             
             @media only screen and (max-width: 600px) {
@@ -127,6 +142,11 @@
                 margin-top: -20vw;
             }
 
+            @keyframes monkeyflapsRight {
+                0% {clip-path: polygon(44% 62%, 44% 98%, 84% 80%, 84% 58%, 57% 69%); }
+                50% {clip-path: polygon(44% 62%, 44% 98%, 84% 80%, 84% 60%, 55% 72%); }
+                100% {clip-path: polygon(44% 62%, 44% 98%, 84% 80%, 84% 58%, 57% 69%); }
+            }
         }
 
         .center {
@@ -175,9 +195,9 @@
         .desc {
             z-index: 1;
             font-family: "Cotham",sans-serif;
-            font-size: 1.5vw;
-            font-weight: 400px;
-            color: $mainPinkLight;
+            font-size: 1.3vw;
+            font-weight: 600;
+            color: $mainDark;
             margin-bottom: 3vh;
 
             @media only screen and (max-width: 600px) {

@@ -1,25 +1,55 @@
 @import "../../global.scss";
 
+.portfolioHeader {
+    height: 32vh;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: white;
+
+    font-size: 12vh;
+    font-weight: 700;
+    margin-left: 10vw;
+
+    @media only screen and (min-width: 2000px) {
+        font-size: 5vh;
+    }
+}
+
 .portfolio {
     display: flex;
+    flex-direction: column;
     -webkit-text-stroke: 0.5px;
     -webkit-text-stroke-color: white;
 
     border-width: 2px;
-    width: 60vw;
-    height: 50vh;
-
-    margin-left: 5vw;
-    margin-top: 2vh;
-
-    overflow: hidden;
+    width: 100%;
+    height: 200vh;
 
     .object {
-        height: 100%;
-        width: 100%;
-        border-style: solid;
-        color: whitesmoke;
-        border-width: 1px;
+        display: flex;
+        flex-direction: column;
+        height: 99%;
+        width: 99%;
+
+        .left {
+            margin-left: 10vw;
+            margin-top: 3vh;
+            width: 45%;
+            height: 62%;
+            border-style: solid;
+            color: $mainPinkLight;
+            border-width: 0.5px;
+        }
+    
+        .right {
+            margin-top: 3vh;
+            align-self: flex-end;
+            width: 37%;
+            height: 62%;
+            border-style: solid;
+            color: $mainPinkLight;
+            border-width: 0.5px;
+        }
     }
 
     @media only screen and (max-width: 600px) {

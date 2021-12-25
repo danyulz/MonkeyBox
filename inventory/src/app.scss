@@ -17,18 +17,4 @@
     @media only screen and (min-width: 2000px) {
             background-color: rgb(177, 207, 95);
     }
-
-    .portfolioHeader {
-        color: rgba(0, 0, 0, 0);
-        -webkit-text-stroke: 0.5px;
-        -webkit-text-stroke-color: white;
-
-        font-size: 10vw;
-        font-weight: 700;
-        margin-left: 10vw;
-
-        @media only screen and (min-width: 2000px) {
-            font-size: 5vw;
-        }
-    }
 }

@@ -1,3 +1,34 @@
+@import "../../global.scss";
+
 .contact {
-    background-color:white;
+    background-color: $mainDark;
+    height: 80vh;
+    width: 100%;
+}
+
+.content {
+    height: 100%;
+    width: 62%;
+    margin:auto;
+    color: white;
+}
+
+.tag {
+    margin-top: 10vh;
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+.interested {
+    margin-top: 2vh;
+    font-size: 8vh;
+    font-weight: 700;
+}
+
+.emailbox {
+    width: calc(100% - 2px);
+    height: 15vh;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: $mainPinkLight;
 }
