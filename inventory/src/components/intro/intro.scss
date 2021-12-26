@@ -193,9 +193,11 @@
         }
 
         .desc {
-            z-index: 1;
+            display: flex;
+            width: 50%;
+            align-items: center;
             font-family: "Cotham",sans-serif;
-            font-size: 1.3vw;
+            font-size: 1vw;
             font-weight: 600;
             color: $mainDark;
             margin-bottom: 3vh;
@@ -209,6 +211,7 @@
                 color: rgb(230, 255, 230);
                 font-size: 1.2vw;
             }
+
         }
     }
 }

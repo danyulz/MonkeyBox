@@ -1,12 +1,15 @@
 import "./intro.scss"
 import banana from '../../res/banana.png'
+import Line from "../line/Line"
 
 export default function intro() {
     return (
         <div className = "intro" id="intro">
             <div className = "wrapper">
                 <div className="desc">
-                    USC Computer Science & Design 
+                    <div className="myname">I'm Daniel He</div>
+                    <Line/>
+                    <div className="title">USC Computer Science & Design</div>
                 </div>
                 <div className="name">I catch your</div>
                 <div className="name">monkey wrenches</div>
