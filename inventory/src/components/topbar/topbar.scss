@@ -6,6 +6,10 @@
     width: 90vw;
     color:#ffb4a2;
 
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: white;
@@ -18,7 +22,7 @@
         padding-left: 1vw;
 
         display: flex;
-        align-content: center;
+        align-items: center;
         justify-content: space-between;
         
         .left {
@@ -27,6 +31,13 @@
                 font-weight: 700;
                 font-size: 62px;
                 text-decoration: none;
+            }
+
+            overflow: hidden;
+
+            @media only screen and (max-width: 600px) {
+                margin-top: -1vh;
+                height: 8vh;
             }
         }
 
@@ -39,6 +50,7 @@
         .middle {
             padding-left: 40%;
             width: 15%;
+            height: 40px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -51,6 +63,12 @@
                 align-items: center;
                 justify-content: center;
                 transition: background-color 0.5s ease-out 50ms
+                
+            }
+
+            @media only screen and (max-width: 600px) {
+                width: 20vh;
+                height: 8vh;
             }
 
             .twitter:hover {
@@ -69,10 +87,27 @@
         .right {
             height: 50px;
             font-size: 40px;
+
+            @media only screen and (max-width: 600px) {
+                display: none;
+            }
         }
          
         .line {
             width:100%;
         }
     }
+
+    @media only screen and (max-width: 600px) {
+        padding-top: 10vh;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }

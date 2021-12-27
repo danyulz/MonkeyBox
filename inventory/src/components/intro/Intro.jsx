@@ -7,7 +7,7 @@ export default function intro() {
         <div className = "intro" id="intro">
             <div className = "wrapper">
                 <div className="desc">
-                    <div className="myname">I'm Daniel He</div>
+                    <div className="myname">Daniel He</div>
                     <Line/>
                     <div className="title">USC Computer Science & Design</div>
                 </div>
@@ -36,9 +36,9 @@ export default function intro() {
                     </div>
                     <div className="center">
                     </div>
-                    <div>
-                        <img className="banana" src={banana} alt="banana"/>
-                    </div>
+                </div>
+                <div className="banana">
+                    <img className="bananaImg" src={banana} alt="banana"/>
                 </div>
             </div>
         </div>
