@@ -8,7 +8,8 @@
 
 .content {
     height: 100%;
-    width: 62%;
+    width: 50%;
+    margin-right: 10vw;
     margin-left: 10vw;
     color: white;
 }
@@ -29,8 +30,36 @@
 .emailbox {
     margin-top: 10vh;
     width: calc(100% - 2px);
-    height: 15vh;
+    height: 10vh;
     border-style: solid;
     border-width: 0.5px;
     border-color: $mainPinkLight;
+    transition: background-color 0.25s ease-out 50ms, font-size 0.1s ease-out 50ms; 
+
+    font-size: 2.7vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.emailbox:hover {
+    background: $mainPinkLight;
+    font-size: 2.62vh;
+}
+
+.mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    border-right: 0.5px solid $mainPinkLight;
+    
+}
+
+.email {
+    display: flex;
+    margin-left: 5%;
+    align-items: center;
+    color: $mainPinkLighter;
+    font-weight: 600;
 }

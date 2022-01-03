@@ -31,9 +31,11 @@
             margin-left: 19vw;
         }
         .name {
+            position: relative;
+            z-index: 1;
             animation: 1s ease-in-out 0s 1 slideInFromLeft;
             display: flex;
-            color: $white;
+            color: $mainPinkLighter;
             font-weight: 700;  
             overflow: hidden;
             font-size: 8vw;
@@ -157,10 +159,10 @@
 
         .center {
             margin-top: -30vw;
-            height: inherit;
-            width: auto;
+            height: 100%;
+            width: 100%;
             clip-path: polygon(13% 50%, 46% 37%, 84% 47%, 44% 62%);
-            background-color: rgb(150, 106, 48);
+            background-color: rgb(143, 102, 48);
             @media only screen and (max-width: 600px) {
                 margin-top: -50vw;
             }
@@ -172,7 +174,7 @@
         }
 
         .banana {
-            z-index: 1;
+            z-index: 0;
             margin-left: 57vw;
             margin-top: -20vw;
 
@@ -180,9 +182,8 @@
             transform-origin: bottom;
 
             @media only screen and (max-width: 600px) {
-                margin-top: -34vw;
-                margin-left: 14vw;
-                width: 18vw;
+                margin-top: -35vw;
+                margin-left: 45.5vw;
             }
             @media only screen and (min-width: 2000px) {
                 width: 7vw;
@@ -192,6 +193,11 @@
 
             .bananaImg {
                 width: 10vw;
+
+                @media only screen and (max-width: 600px) {
+                    width: 18vw;
+                }
+
             }
         }
 
