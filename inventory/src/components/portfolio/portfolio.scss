@@ -69,8 +69,14 @@
         }
 
         .img {
-            height: 61%;
+            height: 63%;
             width: 100%;
+
+            transition: opacity 0.25s ease-out 50ms;
+        }
+
+        .img:hover {
+            opacity: 0.9;
         }
 
         .project:hover {
@@ -97,6 +103,12 @@
            object-fit: cover;
            width: 60%;
            overflow: hidden;
+       }
+
+       .forkstrawImg {
+            width: 100%;
+            overflow: hidden;
+            object-fit: contain;
        }
     }
 

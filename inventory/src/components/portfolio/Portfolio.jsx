@@ -1,5 +1,6 @@
 import "./portfolio.scss"
 import Neigh from "../../assets/Neigh.png"
+import ForkStraw from "../../assets/Forkstraw.png"
 
 export default function Portfolio() {
     return (
@@ -11,11 +12,11 @@ export default function Portfolio() {
             <div className="object">
                 <div className="left">
                     <div className="project crossed">
-                        <div className="img">
-                            <img className="neighImg" src={Neigh} alt="Neigh App Logo"/>
-                        </div>
+                        <img className="img neighImg" src={Neigh} alt="Neigh App Logo"/>
                     </div>
-                    <div className="project crossed right"></div>
+                    <div className="project crossed right">
+                        <img className="img forkstrawImg" src={ForkStraw} alt="Fork straw logo Daniel He"></img>
+                    </div>
                 </div>
                 <div className="right">
                     <div className="project crossed"></div>
